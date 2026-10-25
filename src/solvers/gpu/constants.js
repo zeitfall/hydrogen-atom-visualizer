@@ -1,0 +1,27 @@
+export const WORKGROUP_SIZE = 256;
+
+export const MAX_WORKGROUPS_PER_DIMENSION = 65535;
+
+export const MAX_REDUCTION_GROUP_COUNT = 1024;
+
+export const VALUES_PER_REDUCTION_THREAD = 8;
+
+export const MAX_STATE_COUNT = 16;
+
+export const BYTES_PER_VALUE = 4;
+
+export const PARAMETERS_BYTE_SIZE = 32;
+
+export const STATE_COUNT_BYTE_OFFSET = 8;
+
+export const UNIFORM_BYTE_SIZE = 16;
+
+export const SCALAR_OFFSETS = Object.freeze({
+    COEFFICIENTS: 0,
+    OVERLAPS: MAX_STATE_COUNT,
+    NORM: 2 * MAX_STATE_COUNT,
+    ENERGY: 2 * MAX_STATE_COUNT + 1,
+    RESIDUAL: 2 * MAX_STATE_COUNT + 2
+});
+
+export const SCALAR_COUNT = 2 * MAX_STATE_COUNT + 4;

@@ -1,0 +1,11 @@
+{
+	"name": "hydrogen-atom-visualizer",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Imaginary-time solution of the Schrödinger equation for hydrogen on a 3D grid: sequential CPU vs parallel WebGPU.",
+	"type": "module",
+	"scripts": {
+		"serve": "npx --yes serve -l 5173 .",
+		"test": "node --test"
+	}
+}
